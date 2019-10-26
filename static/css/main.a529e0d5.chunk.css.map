@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,GACE,iBACF,CACA,MACE,WAAY,CACZ,WAAY,CACZ,YAAa,CACb,4BAA6B,CAC7B,kBAAmB,CACnB,cACF","file":"main.a529e0d5.chunk.css","sourcesContent":["h2 {\n  text-align: center;\n}\n.flex {\n  width: 300px;\n  height: 45px;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  margin-left: 4%;\n}\n"]}
