@@ -5,6 +5,7 @@ class Function extends Component {
     super(props);
     //let firstData;
     let currentData = JSON.parse(localStorage.getItem("permanentData")) || [];
+    console.log(currentData);
 
     /* if (addData.length > 0) {
       firstData = addData;
@@ -15,6 +16,7 @@ class Function extends Component {
       container: currentData, //change [] with firstData,
       givenWord: ""
     };
+    console.log(this.state);
   }
 
   handleInput = e => {
