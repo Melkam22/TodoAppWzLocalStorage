@@ -3,16 +3,16 @@ import React, { Component } from "react";
 class Function extends Component {
   constructor(props) {
     super(props);
-    let firstData;
-    let currentData = localStorage.getItem("permanentData");
-    let addData = JSON.parse(currentData);
-    if (addData.length > 0) {
+    //let firstData;
+    let currentData = JSON.parse(localStorage.getItem("permanentData")) || [];
+
+    /* if (addData.length > 0) {
       firstData = addData;
     } else {
       firstData = ["initialData"];
-    }
+    } */
     this.state = {
-      container: firstData, //change [] with firstData,
+      container: currentData, //change [] with firstData,
       givenWord: ""
     };
   }
@@ -58,20 +58,20 @@ class Function extends Component {
   render() {
     return (
       <div className="container">
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
+        <div className="row">
+          <form className="col s12">
+            <div className="row">
+              <div className="input-field col s12">
                 <input
                   id="text"
                   type="text"
-                  /* class="validate" */
+                  /* className="validate" */
                   onChange={this.handleInput}
                   value={this.state.givenWord}
                 />
-                <label for="text">Your todos</label>
+                <label htmlFor="text">Your todos</label>
                 <button
-                  class="btn waves-effect waves-light"
+                  className="btn waves-effect waves-light"
                   type="submit"
                   name="action"
                   onClick={this.handleSubmit}
